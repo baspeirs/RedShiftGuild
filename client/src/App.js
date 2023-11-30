@@ -1,7 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchRosterData } from './store/actions/rosterActions';
 
 function App() {
+  const dispatch = useDispatch();
+  const roster = useSelector(state => state.roster);
+
+  useEffect(() => {
+    dispatch(fetchRosterData())
+  }, [dispatch])
+
   return (
     <div className="App">
       <header className="App-header">
