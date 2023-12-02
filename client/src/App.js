@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useEffect, Fragment } from 'react';
+import { useDispatch } from 'react-redux';
 import { fetchRosterData } from './store/actions/rosterActions';
-
+import { TitleCard } from './common/TitleCard';
 function App() {
   const dispatch = useDispatch();
-  const roster = useSelector(state => state.roster);
 
   useEffect(() => {
     dispatch(fetchRosterData())
@@ -14,20 +13,16 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section id='header-section'>
+        <TitleCard 
+          header={'RedShift'}
+          subHeader1={'Burning Crusade Classic'}
+          subHeader2={'Mankrik'}
+        />
+      </section>
+      <section id='accomplishments-section'>
+
+      </section>
     </div>
   );
 }
