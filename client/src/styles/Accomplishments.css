@@ -1,0 +1,46 @@
+#accomplishments-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(227, 24, 24);
+  padding-top: 40px;
+  position: relative;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.tilt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 81px;
+}
+
+.tilt .shape-fill {
+  fill: black;
+}
+
+#accomplishments-section h2 {
+  font-size: 90px;
+  background-color: aqua;
+  border-radius: 2rem;
+  padding: 2px;
+
+}
+
+.phases {
+  display: flex;
+}
+
+.phase-card {
+  background-color: aqua;
+  margin: 5px;
+}
