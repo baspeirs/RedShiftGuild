@@ -4,14 +4,15 @@ import { useDispatch } from 'react-redux';
 import { fetchRosterData } from './store/actions/rosterActions';
 import { TitleCard } from './common/TitleCard';
 import { Accomplishments } from './sections/Accomplishments';
+import { fetchAccomplishmentsData } from './store/actions/accomplishmentsActions';
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchRosterData());
+    dispatch(fetchAccomplishmentsData());
   }, [dispatch]);
-
 
   return (
     <div className="App">

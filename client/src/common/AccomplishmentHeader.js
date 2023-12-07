@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/AccomplishemntHeader.css'
+import '../styles/AccomplishemntHeader.css';
 
 export const AccomplishmentHeader = (props) => {
     const completed = props.completed ? 'Completed' : 'Incomplete'
@@ -9,5 +9,5 @@ export const AccomplishmentHeader = (props) => {
             <p className="phase-title">{`phase ${props.phase}:`}</p>
             <p className="phase-completion">{completed}</p>
         </div>
-    )
+    );
 };

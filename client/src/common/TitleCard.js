@@ -9,5 +9,5 @@ export const TitleCard = props => {
             <h2>{props.subHeader1}</h2>
             <h2>{props.subHeader2}</h2>
         </section>
-    )
-}
+    );
+};

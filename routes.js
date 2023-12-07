@@ -47,6 +47,37 @@ router.get('/api/getRoster', async (req, res) => {
     res.json(returnData);
 });
 
+router.get('/api/getAccomplishments', async (req, res) => {
+    const accomplishements = [
+        {
+            phase: '1',
+            completed: true,
+            raids: [
+              { raid: 'Magtheridon', completion: '1/1' },
+              { raid: 'Gruul and Maulgar', completion: '2/2' },
+              { raid: 'Karazhan', completion: '11/11' }
+            ]
+          },
+          {
+            phase: '2',
+            completed: true,
+            raids: [
+              { raid: 'Serpentshrine Cavern', completion: '6/6' },
+              { raid: 'Tempest Keep', completion: '4/4' }
+            ]
+          },
+          {
+            phase: '3',
+            completed: true,
+            raids: [
+              { raid: 'Mount Hyjal', completion: '5/5' },
+              { raid: 'Black Temple', completion: '11/11' }
+            ]
+          },
+    ]
+    res.json(accomplishements)
+});
+
 router.get("*", function(req, res) {
     res.sendFile(path.join(__dirname, './client/public/index.html'));
   });

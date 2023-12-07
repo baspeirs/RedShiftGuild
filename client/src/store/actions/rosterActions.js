@@ -10,15 +10,14 @@ export const fetchRosterData = () => {
                 throw new Error('Fetching roster data failed')
             };
             
-            return response
-        }
+            return response;
+        };
 
         try {
             const rosterData = await fetchData();
-            console.log(rosterData);
             dispatch(rosterActions.getRoster(rosterData))
         } catch (error) {
             console.error(error)
-        }
-    }
-}
+        };
+    };
+};

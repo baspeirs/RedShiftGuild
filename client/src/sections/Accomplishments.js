@@ -1,39 +1,11 @@
 import React from "react";
 import '../styles/Accomplishments.css'
-// import { phase1 } from '../accomplishments/phase1';
 import { AccomplishmentHeader } from '../common/AccomplishmentHeader';
 import { SlideShow } from "../common/SlideShow";
+import { useSelector } from "react-redux";
 
 export const Accomplishments = (props) => {
-  const accomplishments = [
-    {
-      phase: '1',
-      completed: true,
-      raids: [
-        { raid: 'magtheridon', completion: '1/1' },
-        { raid: 'gruul and maulgar', completion: '1/1' },
-        { raid: 'karazhan', completion: '1/1' }
-      ]
-    },
-    {
-      phase: '2',
-      completed: true,
-      raids: [
-        { raid: 'magtheridon', completion: '1/1' },
-        { raid: 'gruul and maulgar', completion: '1/1' },
-        { raid: 'karazhan', completion: '1/1' }
-      ]
-    },
-    {
-      phase: '3',
-      completed: true,
-      raids: [
-        { raid: 'magtheridon', completion: '1/1' },
-        { raid: 'gruul and maulgar', completion: '1/1' },
-        { raid: 'karazhan', completion: '1/1' }
-      ]
-    }
-  ]
+  const accomplishments = useSelector(state => state.accomplishments.accomplishments)
 
   return (
     <section id='accomplishments-section'>
@@ -55,21 +27,6 @@ export const Accomplishments = (props) => {
             />
           </div>
         })}
-
-        {/* <div className="phase-card">
-          <AccomplishmentHeader
-            phase={'Phase 1'}
-            completed={true}
-          />
-          <SlideShow />
-        </div>
-        <div className="phase-card">
-          <AccomplishmentHeader
-            phase={'Phase 1'}
-            completed={true}
-          />
-          <SlideShow />
-        </div> */}
       </div>
 
       <div className="tilt">
