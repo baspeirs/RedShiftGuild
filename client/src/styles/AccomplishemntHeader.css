@@ -1,5 +1,23 @@
-/* .accomplishment-header {
+.phase-title {
+    font-family: 'Nova Square', sans-serif;
+    font-size: max(1.5vw, 15px);
+
+    margin: 0;
+}
+
+.phase-completion {
+    margin: 0;
+    font-family: 'Nova Square', sans-serif;
+    font-size: max(3vw, 15px);
+    padding-left: 10px;
+}
+
+.accomplishment-header {
+    width: 90%;
     display: flex;
-    justify-content: end;
-    align-items: end;
-} */
+    align-items: baseline;
+    align-self: flex-end;
+    padding: 5px;
+    padding-bottom: 0;
+    color: #182335;
+}

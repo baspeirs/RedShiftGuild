@@ -1,19 +1,29 @@
 .raid-card {
-    background-color: black;
-    border: 1px solid white;
-    color: white;
+    background-color: #e15546;
+    border: 1px solid #eeaf9d;
+    border-radius: 1rem;
+    color: #eae4cc;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: auto;
+    aspect-ratio: 16/13;
+    margin: 3px;
+}
+
+.empty {
+    flex-basis: 65%;
 }
 
 .raid-details {
+    font-family: 'Nova Square', sans-serif;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #e15546;
     flex-basis: 35%;
     padding-top: 5px;
     clip-path: polygon(100% 25%,

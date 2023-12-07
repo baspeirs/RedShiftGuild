@@ -1,11 +1,14 @@
 #accomplishments-section {
   display: flex;
   flex-direction: column;
-  background-color: rgb(227, 24, 24);
+  background-color: #263854;
   padding-top: 40px;
   position: relative;
   padding-left: 10%;
   padding-right: 10%;
+  padding: 50px;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .tilt {
@@ -25,22 +28,58 @@
 }
 
 .tilt .shape-fill {
-  fill: black;
+  fill: #182335;
 }
 
-#accomplishments-section h2 {
-  font-size: 90px;
-  background-color: aqua;
-  border-radius: 2rem;
-  padding: 2px;
+.accomplishments-header {
+  font-family: 'Nova Square', sans-serif;
+  font-size: max(8vw, 25px);
+  margin: 0;
+  color: white;
+  /* color: #eeaf9d; */
+  /* color: #eae4cc; */
+  /* color: #fffeb3; */
+}
 
+.accomplishments-statement {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: max(1.9vw, 15px);
+  margin: 0;
+  color: #eae4cc;
+  background-color: #e15546;
+  border-radius: .25rem;
+  padding: 10px;
+}
+
+.accomplishments-section-heding {
+  margin-top: 50px;
+  margin-bottom: 5px;
 }
 
 .phases {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .phase-card {
-  background-color: aqua;
-  margin: 5px;
+  width: 32.3%;
+  border-radius: .25rem;
+  background-color: #eae4cc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 735px) {
+  .phases {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phase-card {
+    width: 100%;
+    margin-bottom: 5px;
+  }
 }

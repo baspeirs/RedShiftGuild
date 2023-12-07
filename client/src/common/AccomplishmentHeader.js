@@ -6,8 +6,8 @@ export const AccomplishmentHeader = (props) => {
 
     return (
         <div className="accomplishment-header">
-            <h3>{props.phase}</h3>
-            <h4>{completed}</h4>
+            <p className="phase-title">{`phase ${props.phase}:`}</p>
+            <p className="phase-completion">{completed}</p>
         </div>
     )
 };
