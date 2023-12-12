@@ -1,0 +1,30 @@
+.admin-card {
+    display: flex;
+    justify-content: center;
+    background: #EAE4CC;
+    padding: 10px;
+    width: 50%;
+    height: 190px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #182335;
+    margin: 30px;
+}
+
+.admin-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #182335;
+}
+
+.admin-image {
+    position: absolute;
+    left: -19%;
+    top: 10%;
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 5px 5px 5px black;
+}

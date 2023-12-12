@@ -5,6 +5,7 @@ import { fetchRosterData } from './store/actions/rosterActions';
 import { TitleCard } from './common/TitleCard';
 import { Accomplishments } from './sections/Accomplishments';
 import { fetchAccomplishmentsData } from './store/actions/accomplishmentsActions';
+import { GuildInfo } from './sections/GuildInfo';
 
 function App() {
   const dispatch = useDispatch();
@@ -24,9 +25,7 @@ function App() {
         />
       </section>
       <Accomplishments />
-      <section>
-        <h1>Look at me</h1>
-      </section>
+      <GuildInfo />
     </div>
   );
 }

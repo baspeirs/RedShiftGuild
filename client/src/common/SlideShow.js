@@ -5,7 +5,7 @@ import { RaidCard } from "./RaidCard";
 export const SlideShow = (props) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const delay = 2500;
+    const delay = 5000;
 
     useEffect(() => {
         setTimeout(() => {

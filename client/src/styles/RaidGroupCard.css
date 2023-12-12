@@ -1,0 +1,12 @@
+.raid-group-card-header {
+    background: #E15546;
+}
+
+.raid-group-card {
+    border: solid 1px #E15546;
+    /* width: 200px; */
+}
+
+.raid-group-card-details {
+    margin: 15px;
+}
