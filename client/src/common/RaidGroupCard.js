@@ -6,7 +6,7 @@ export const RaidGroupCard = (props) => {
     return (
 
         <div className="raid-group-card">
-            <h3 className="raid-group-card-header">Group 1</h3>
+            <h4 className="raid-group-card-header">Group 1</h4>
             <div className="raid-group-card-details">
             <p>Gruul || Mag || SSC || TK</p>
             <p>Tuesdays & Wednesdays 8:00 PM ST - 11 PM ST</p>

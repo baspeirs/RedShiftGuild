@@ -15,11 +15,20 @@
     background: #EAE4CC;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     /* justify-content: center; */
 }
 
-#guild-contacts {
+#raid-info h3 {
+    font-family: 'Nova Square', sans-serif;
+    color: #182335;
+    font-size: 4.1vw;
+}
+
+#guild-admins {
     position: absolute;
     left: 0;
     z-index: 1;
@@ -27,8 +36,7 @@
     height: 100%;
     background: #E15546;
     padding-top: 15px;
-    clip-path: polygon(
-            100% 100%,
+    clip-path: polygon(100% 100%,
             100% 100%,
             100% 100%,
             0% 100%,
@@ -38,4 +46,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#admin-header {
+    font-family: 'Nova Square', sans-serif;
+    color: #EAE4CC;
+    font-size: 4.1vw;
 }

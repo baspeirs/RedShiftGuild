@@ -10,8 +10,8 @@ export const GuildInfo = () => {
         <>
             <h2 className="section-header">Guild Information</h2>
             <section id="guild-info">
-                <div id="guild-contacts">
-                    <h3>Admins</h3>
+                <div id="guild-admins">
+                    <h3 id="admin-header">Admins</h3>
                     {admins.map(({ admin, role, quote }) => {
                         return <AdminCard
                             admin={admin}
@@ -24,8 +24,11 @@ export const GuildInfo = () => {
                     <h3>Raid Schedule</h3>
                     <p>Server Time (ST) is the same as Eastern Standard Time</p>
                     <RaidGroupCard />
-                    <p>Groups may also organize for Kara and Classic Raid Content (just for fun)</p>
-                    <p>Utilize discord chats for non-weekly raids, guild rquests, and general nonsense</p>
+                    <div>
+                        <p>Groups may also organize for Kara and Classic Raid Content (just for fun)</p>
+                        <p>Utilize discord chats for non-weekly raids, guild rquests, and general nonsense</p>
+                    </div>
+
                 </div>
             </section>
         </>

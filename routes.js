@@ -49,9 +49,9 @@ router.get('/api/getRoster', async (req, res) => {
 
 router.get('/api/getAdmins', async (req, res) => {
   const admins = [
-    {admin: 'Willfeign', role: 'Your Overlord', quote: 'Go on, get!'},
-    {admin: 'Dmontri', role: 'Raid Lead', quote: 'That\'ll be another citation'},
-    {admin: 'Kaosyn', role: 'Guild Bank', quote: 'Ask me about my cars extended warranty'},
+    {admin: 'Willfeign', role: 'Your Overlord', quote: '"Go on, get!"'},
+    {admin: 'Dmontri', role: 'Raid Lead', quote: '"That\'ll be another citation"'},
+    {admin: 'Kaosyn', role: 'Guild Bank', quote: '"Ask me about my cars extended warranty"'},
     {admin: 'Jointboi', role: 'Cool Guy', quote: '"Coolest guy in the guild. No freakin contest" - Willfeign'},
   ];
 
