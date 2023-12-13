@@ -6,5 +6,8 @@ export const API = {
     },
     getAccomplishments: function() {
         return axios.get('/api/getAccomplishments')
+    },
+    getAdmins: function() {
+        return axios.get('/api/getAdmins')
     }
 }

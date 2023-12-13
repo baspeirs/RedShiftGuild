@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { fetchRosterData } from './store/actions/rosterActions';
 import { TitleCard } from './common/TitleCard';
 import { Accomplishments } from './sections/Accomplishments';
+import { fetchAdminsData } from './store/actions/adminsActions'
 import { fetchAccomplishmentsData } from './store/actions/accomplishmentsActions';
 import { GuildInfo } from './sections/GuildInfo';
 import { Roster } from './sections/Roster';
@@ -14,6 +15,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchRosterData());
     dispatch(fetchAccomplishmentsData());
+    dispatch(fetchAdminsData())
   }, [dispatch]);
 
   return (

@@ -2,18 +2,23 @@ import React from "react";
 import '../styles/GuildInfo.css';
 import { AdminCard } from "../common/AdminCard";
 import { RaidGroupCard } from "../common/RaidGroupCard";
+import { useSelector } from "react-redux";
 
 export const GuildInfo = () => {
-
+    const admins = useSelector(state => state.admins.admins);
     return (
         <>
             <h2 className="section-header">Guild Information</h2>
             <section id="guild-info">
                 <div id="guild-contacts">
                     <h3>Admins</h3>
-                    <AdminCard />
-                    <AdminCard />
-                    <AdminCard />
+                    {admins.map(({ admin, role, quote }) => {
+                        return <AdminCard
+                            admin={admin}
+                            role={role}
+                            quote={quote}
+                        />
+                    })};
                 </div>
                 <div id="raid-info">
                     <h3>Raid Schedule</h3>

@@ -12,8 +12,8 @@ export const AdminCard = (props) => {
                 backgroundSize: 'cover'
             }}></div>
             <div className="admin-card-info">
-                <h3>Your Overlord - Willfeign</h3>
-                <p>"Go on, get!"</p>
+                <h3>{`${props.role}: ${props.admin}`}</h3>
+                <p>{props.quote}</p>
             </div>
         </div>
     )
