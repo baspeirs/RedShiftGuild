@@ -6,6 +6,7 @@ import { TitleCard } from './common/TitleCard';
 import { Accomplishments } from './sections/Accomplishments';
 import { fetchAccomplishmentsData } from './store/actions/accomplishmentsActions';
 import { GuildInfo } from './sections/GuildInfo';
+import { Roster } from './sections/Roster';
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ function App() {
       </section>
       <Accomplishments />
       <GuildInfo />
+      <Roster />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import { AccomplishmentHeader } from '../common/AccomplishmentHeader';
 import { SlideShow } from "../common/SlideShow";
 import { useSelector } from "react-redux";
 
-export const Accomplishments = (props) => {
+export const Accomplishments = () => {
   const accomplishments = useSelector(state => state.accomplishments.accomplishments)
 
   return (
@@ -16,13 +16,15 @@ export const Accomplishments = (props) => {
         </p>
       </div>
       <div className="phases">
-        {accomplishments.map((acc) => {
+        {accomplishments.map((acc, index) => {
           return <div className="phase-card">
             <AccomplishmentHeader
+              key={`accomp-header${index}`}
               phase={acc.phase}
               completed={acc.completed}
             />
             <SlideShow 
+              key={`slide-show-bob${index}`}
               raids={acc.raids}
             />
           </div>
@@ -34,7 +36,6 @@ export const Accomplishments = (props) => {
           <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
         </svg>
       </div>
-
     </section>
   )
 };

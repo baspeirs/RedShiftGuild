@@ -6,7 +6,6 @@ const initialAccomplishmentState = {
 
 const accomplishmentsReducers = {
     getAccomplishments(state, action) {
-        console.log(action.payload);
         state.accomplishments = action.payload.data
     }
 };
