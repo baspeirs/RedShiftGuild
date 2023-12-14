@@ -1,15 +1,19 @@
 .roster-content {
     display: flex;
     color: white;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 15%;
+}
+
+.dps-side {
+    flex-basis: 40%;
 }
 
 .dps-group {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 50%;
-    /* flex-grow: 5; */
+    flex-grow: 5;
 }
 
 .player-card {
@@ -24,6 +28,18 @@
 
 .player-info {
     background-color: #2e4873;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.player-info img {
+    width: 40px;
+}
+
+.player-info p {
+    margin: auto;
+    margin-left: 10px;
 }
 
 .no-info {

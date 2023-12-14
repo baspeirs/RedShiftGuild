@@ -55,16 +55,18 @@ export const Roster = () => {
                             : <p className='player-card no-info'>Open Slot</p>
                     })}
                 </div>
-                <div className='dps-group'>
+                <div className='dps-side'>
                     <h3>DPS</h3>
-                    {damageDealers?.map(damageDealer => {
-                        return damageDealer.player
-                            ? <div className='player-card player-info'>
-                                <img src={getClassImage(damageDealer.specialization)} alt={damageDealer.specialization} />
-                                <p>{damageDealer.player}</p>
-                            </div>
-                            : <p className='player-card no-info'>Open Slot</p>
-                    })}
+                    <div className='dps-group'>
+                        {damageDealers?.map(damageDealer => {
+                            return damageDealer.player
+                                ? <div className='player-card player-info'>
+                                    <img src={getClassImage(damageDealer.specialization)} alt={damageDealer.specialization} />
+                                    <p>{damageDealer.player}</p>
+                                </div>
+                                : <p className='player-card no-info'>Open Slot</p>
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
