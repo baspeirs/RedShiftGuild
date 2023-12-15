@@ -1,16 +1,18 @@
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .App {
   text-align: center;
 }
 
-#header-section {
+#hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 .section-header {

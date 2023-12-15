@@ -4,10 +4,12 @@ import '../styles/TitleCard.css'
 export const TitleCard = props => {
 
     return (
-        <section className="title-card">
-            <h1>{props.header}</h1>
-            <h2>{props.subHeader1}</h2>
-            <h2>{props.subHeader2}</h2>
+        <section id="title-card">
+            <div className="redshift-neon-logo">
+                <h1>{props.header}</h1>
+                <h2>{props.subHeader1}</h2>
+                <h2>{props.subHeader2}</h2>
+            </div>
         </section>
     );
 };
