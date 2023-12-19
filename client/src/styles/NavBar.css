@@ -10,7 +10,7 @@
     justify-content: space-evenly;
 }
 
-button {
+.nav-bar button {
     color: #fff;
     font-family: 'Bricolage Grotesque', sans-serif;
     font-size: 30px;
@@ -21,7 +21,7 @@ button {
     border-radius: 2px;
 }
 
-button:hover {
+.nav-bar button:hover {
     transition: .4s;
     text-shadow:
     0 0 10px #fff,

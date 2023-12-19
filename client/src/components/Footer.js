@@ -13,40 +13,45 @@ export const Footer = () => {
     return (
         <footer id="footer">
             <div id="footer-guild-info">
-                <div id="guild-info-left">
-                    <h5>Red Shift</h5>
-                    <p>Social Media links coming soon</p>
-                    <div id="social-media-link-group">
-                        <img src={FacebookIcon} alt="facebook" />
-                        <img src={InstagramIcon} alt="instagram" />
-                        <img src={TwitterXIcon} alt="twitter/x" />
-                        <img src={TikTokIcon} alt="tik tok" />
-                    </div>
+                <h5 id="redshift-logo">RedShift</h5>
+                <p>Social Media links coming soon</p>
+                <div className="social-media-link-group">
+                    <img src={FacebookIcon} alt="facebook" />
+                    <img src={InstagramIcon} alt="instagram" />
+                    <img src={TwitterXIcon} alt="twitter/x" />
+                    <img src={TikTokIcon} alt="tik tok" />
                 </div>
-                <div id="guild-info-right">
-                    <p>FAQ</p>
-                    <p>Contact</p>
+                <div className="additional-links">
+                    <a href="https://redshift-guild.herokuapp.com/">
+                        <p>FAQ</p>
+                    </a>
+                    <a href="mailto: baspeirs@gmail.com">
+                        <p>Contact</p>
+                    </a>
                 </div>
-
             </div>
             <div id="footer-separater">
                 <img id="jointboi-flex" src={JointboiFlex} alt="flexing troll" />
             </div>
             <div id="footer-bryce-info">
-                <div id="bryce-info-left">
-                    <h5>Bryce Speirs Development - 2023</h5>
-                    <img src={GitHubIcon} alt="github" />
-                    <img src={linkedinIcon} alt="linkedin" />
+                <h5>Bryce Speirs Development - 2023</h5>
+                <div className="social-media-link-group">
+                    <a href='https://github.com/baspeirs'>
+                        <img src={GitHubIcon} alt="github" />
+                    </a>
+                    <a href='https://www.linkedin.com/in/bryce-speirs-bb1319199/'>
+                        <img src={linkedinIcon} alt="linkedin" />
+                    </a>
                 </div>
-                <div id="bryce-info-right">
-                    <p>portfolio</p>
-                    <p>Contact</p>
-                    <p>FAQ</p>
+                <div className="additional-links">
+                    <a href='https://baspeirs.github.io/'>
+                        <p>Portfolio</p>
+                    </a>
+                    <a href='mailto: baspeirs@gmail.com'>
+                        <p>Contact</p>
+                    </a>
                 </div>
-
             </div>
         </footer>
     )
 };
-
-

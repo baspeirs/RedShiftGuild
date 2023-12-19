@@ -19,7 +19,7 @@ router.get('/api/getRoster', async (req, res) => {
     const getGroup1 = await sheets.spreadsheets.values.get({
         // auth,
         spreadsheetId: process.env.SPREADSHEET_ID,
-        range: "Group1!A2:C50"
+        range: "Group1!A2:F50"
     });
 
     const getRaidDetails1 = await sheets.spreadsheets.values.get({

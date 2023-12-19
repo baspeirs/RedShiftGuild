@@ -8,29 +8,32 @@
     display: grid;
     grid-template-columns: 1fr .5fr 1fr;
     align-items: center;
+    margin-top: 50px;
 }
 
 #footer-guild-info {
     display: flex;
     justify-content: space-evenly;
-    /* flex-basis: 33%; */
+    flex-direction: column;
 }
 
-#footer-separater {
-    /* flex-basis: 33%; */
-}
-
-#footer-bryce-info {
-    /* flex-basis: 33%; */
+#redshift-logo {
+    font-family: 'Nova Square', sans-serif;
+    font-size: 50px;
 }
 
 #footer-bryce-info {
     display: flex;
-    justify-content: space-around;
-    align-items: start;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #jointboi-flex {
     border-radius: 5px;
     width: 30%;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-evenly;
 }

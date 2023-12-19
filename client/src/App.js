@@ -10,7 +10,7 @@ import { GuildInfo } from './sections/GuildInfo';
 import { Roster } from './sections/Roster';
 import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
-import Hero from './images/Hero/florian-olivo-Mf23RF8xArY-unsplash.jpg';
+import { Hero } from './sections/Hero';
 
 function App() {
   const dispatch = useDispatch();
@@ -24,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <section id='hero-section' style={{
+      <Hero />
+      {/* <section id='hero-section' style={{
         backgroundImage: `url(${Hero})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
@@ -34,7 +35,7 @@ function App() {
           subHeader1={'Burning Crusade Classic'}
           subHeader2={'Mankrik'}
         />
-      </section>
+      </section> */}
       <Accomplishments />
       <GuildInfo />
       <Roster />
