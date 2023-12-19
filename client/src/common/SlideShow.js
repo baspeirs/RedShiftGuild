@@ -18,6 +18,7 @@ export const SlideShow = (props) => {
                 {props.raids.map((slide, index) => {
                     return <div className="slide" key={index}>
                         <RaidCard 
+                            key={index}
                             raid={slide.raid}
                             completion={slide.completion}
                         />

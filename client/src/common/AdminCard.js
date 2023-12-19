@@ -37,4 +37,4 @@ export const AdminCard = (props) => {
             </div>
         </div>
     )
-}
+};

@@ -12,8 +12,9 @@ export const GuildInfo = () => {
             <section id="guild-info">
                 <div id="guild-admins">
                     <h3 id="admin-header">Admins</h3>
-                    {admins.map(({ admin, role, quote }) => {
+                    {admins.map(({ admin, role, quote }, index) => {
                         return <AdminCard
+                            key={index}
                             admin={admin}
                             role={role}
                             quote={quote}

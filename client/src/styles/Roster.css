@@ -33,6 +33,16 @@
     align-items: end;
 }
 
+.player-info:hover {
+    cursor: pointer;
+    transition: .4s;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(227, 24, 24),
+    0 0 151px rgb(227, 24, 24);
+}
+
 .player-info img {
     width: 40px;
 }

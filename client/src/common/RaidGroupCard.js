@@ -4,7 +4,6 @@ import '../styles/RaidGroupCard.css';
 export const RaidGroupCard = (props) => {
 
     return (
-
         <div className="raid-group-card">
             <h4 className="raid-group-card-header">Group 1</h4>
             <div className="raid-group-card-details">
@@ -14,4 +13,4 @@ export const RaidGroupCard = (props) => {
             </div>
         </div>
     )
-}
+};
