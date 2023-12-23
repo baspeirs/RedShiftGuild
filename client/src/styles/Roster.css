@@ -1,60 +1,69 @@
+#roster-section {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
 .roster-content {
     display: flex;
-    color: white;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+}
+
+.roster-group {
+    border: solid 2px #2E4873;
+    padding: 15px;
+    display: grid;
+    /* max-width: 50%; */
+    gap: 25px;
+}
+
+.tanks-and-heals-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    gap: 25px;
+}
+
+.battle-group {
+    background-color: #2e4873;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    width: 100%;
+}
+
+.bg-header {
+  font-family: 'Nova Square', sans-serif;
 }
 
 .dps-side {
-    flex-basis: 40%;
-}
-
-.dps-group {
     display: flex;
-    flex-wrap: wrap;
-    flex-grow: 5;
-}
-
-.player-card {
-    margin: 5px;
-    width: 300px;
-    border-radius: 5px;
-    font-family: 'Bricolage Grotesque', sans-serif;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.player-info {
-    background-color: #2e4873;
-    display: flex;
-    justify-content: start;
-    align-items: end;
+.dps-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 13%;
 }
 
-.player-info:hover {
-    cursor: pointer;
-    transition: .4s;
-    text-shadow:
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px rgb(227, 24, 24),
-    0 0 151px rgb(227, 24, 24);
+.bg-list {
+    margin-left: 5px;
 }
 
-.player-info img {
-    width: 40px;
+@media screen and (max-width: 830px) {
+    .tanks-and-heals-group, .dps-group {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.player-info p {
-    margin: auto;
-    margin-left: 10px;
-}
+@media screen and (max-width: 420px) {
 
-.no-info {
-    background-color: #263854;
-    border: solid #2e4873 1px;
-    font-style: italic;
-    font-size: small;
+    .bg-list {
+        margin-left: 0;
+    }
 }

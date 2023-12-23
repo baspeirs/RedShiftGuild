@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Modal } from "./Modal";
+import '../styles/PlayerInfoCard.css'
 
 const importImages = (importedImages) => {
     let images = {};
@@ -28,7 +29,7 @@ export const PlayerInfoCard = (props) => {
 
     return (
         <>
-            <div className='player-card player-info' onClick={() => setModalOpen(true)}>
+            <div className={`player-card player-info ${props.charRole}`} onClick={() => setModalOpen(true)}>
                 <img src={getClassImage(props.specialization)} alt={props.specialization} />
                 <p>{props.player}</p>
             </div>

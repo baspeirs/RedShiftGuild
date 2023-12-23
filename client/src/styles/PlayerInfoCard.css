@@ -1,0 +1,63 @@
+.player-card {
+    width: 300px;
+    border-radius: 5px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #B6B6B640;
+}
+
+.player-info {
+    background-color: #2e4873;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    position: relative;
+}
+
+.player-info:hover {
+    cursor: pointer;
+    transition: .4s;
+    background-color: #182335;
+}
+
+.player-info:hover::after {
+    content: 'VIEW';
+    text-decoration: underline;
+    position: absolute;
+    right: 13px;
+    top: 12px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 12px;
+}
+
+.player-info img {
+    width: 40px;
+}
+
+.player-info p {
+    margin: auto;
+    margin-left: 10px;
+}
+
+.no-info {
+    background-color: #263854;
+    border: solid #2e4873 1px;
+    font-style: italic;
+    font-size: small;
+}
+
+.dps {
+    margin: 2.5px;
+}
+
+.tank, .healer {
+    margin: 5px;
+}
+
+@media screen and (max-width: 420px) {
+    .player-card {
+        width: 100%;
+    }
+}
