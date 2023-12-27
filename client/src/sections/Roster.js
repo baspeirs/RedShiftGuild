@@ -11,8 +11,8 @@ export const Roster = () => {
 
     return (
         <section id='roster-section'>
-            <h2 className="section-header">Roster</h2>
-            <h3>Group 1</h3>
+            <h2 className="section-header">ROSTER</h2>
+            <h3 className='section-subheader'>Group 1</h3>
             <div className='roster-content'>
                 <div className='roster-group'>
                     <div className='tanks-and-heals-group'>

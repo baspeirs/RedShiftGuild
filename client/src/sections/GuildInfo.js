@@ -8,8 +8,8 @@ export const GuildInfo = () => {
     const admins = useSelector(state => state.admins.admins);
     return (
         <>
-            <h2 className="section-header">Guild Information</h2>
-            <div id="guild-info-sub-header">
+            <h2 className="section-header">GUILD INFORMATION</h2>
+            <div className='section-subheader'>
                 <p>Gaze upon your royalty and ponder the requirements set before you</p>
             </div>
             <section id="guild-info">

@@ -10,8 +10,8 @@ export const Accomplishments = () => {
   return (
     <section id='accomplishments-section'>
       <div className="accomplishments-section-heding">
-        <h2 className="section-header">Accomplishments</h2>
-        <p className="accomplishments-statement">
+        <h2 className="section-header">ACCOMPLISHMENTS</h2>
+        <p className='section-subheader'>
           Join our guild and dominate the invadors from the Burning Legion
         </p>
       </div>

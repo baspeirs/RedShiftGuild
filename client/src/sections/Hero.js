@@ -15,7 +15,7 @@ export const Hero = () => {
                 }}
             >
                 <TitleCard
-                    header={'RedShift'}
+                    header={'REDSHIFT'}
                     subHeader1={'Burning Crusade Classic'}
                     subHeader2={'Mankrik'}
                 />
