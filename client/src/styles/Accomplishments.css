@@ -9,6 +9,7 @@
   padding: 50px;
   min-height: 100vh;
   min-height: 100svh;
+  margin-bottom: 50px;
 }
 
 .tilt {
@@ -35,12 +36,13 @@
 
 .accomplishments-statement {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: max(1.9vw, 15px);
+  font-size: max(1.7vw, 15px);
   margin: 0;
-  color: #eae4cc;
-  background-color: #e15546;
+  color: #ffff;
+  background-color: #8A1103;
   border-radius: .25rem;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .accomplishments-section-heding {
@@ -56,7 +58,7 @@
 }
 
 .phase-card {
-  width: 32.3%;
+  width: 32%;
   border-radius: .25rem;
   background-color: #eae4cc;
   display: flex;
@@ -64,7 +66,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 735px) {
+@media (max-width: 1250px) {
   .phases {
     display: flex;
     flex-direction: column;

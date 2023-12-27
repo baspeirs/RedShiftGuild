@@ -1,8 +1,6 @@
 .raid-card {
-    background-color: #e15546;
-    border: 1px solid #eeaf9d;
     border-radius: 1rem;
-    color: #eae4cc;
+    color: #ffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -23,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e15546;
+    background-color: #8A1103;
     flex-basis: 35%;
     padding-top: 5px;
     clip-path: polygon(100% 25%,
@@ -32,4 +30,15 @@
             100% 100%,
             0% 100%,
             0% 0%);
+}
+
+.raid-details h4 {
+    margin-top: 55px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+    .raid-card {
+        aspect-ratio: 16/10;
+    }
 }

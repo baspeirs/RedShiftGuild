@@ -7,7 +7,6 @@ import { fetchAdminsData } from './store/actions/adminsActions'
 import { fetchAccomplishmentsData } from './store/actions/accomplishmentsActions';
 import { GuildInfo } from './sections/GuildInfo';
 import { Roster } from './sections/Roster';
-import { NavBar } from './components/NavBar';
 import { Footer } from './components/Footer';
 import { Hero } from './sections/Hero';
 
@@ -22,7 +21,6 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar />
       <Hero />
       <Accomplishments />
       <GuildInfo />

@@ -46,7 +46,7 @@ export const RaidCard = (props) => {
         }}>
             <div className="empty"></div>
             <div className="raid-details">
-                <h3>{props.raid}</h3>
+                <h4>{props.raid}</h4>
                 <p>{props.completion}</p>
             </div>
         </div>

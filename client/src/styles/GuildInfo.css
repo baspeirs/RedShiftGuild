@@ -5,8 +5,7 @@
     justify-content: center;
     background: #182335;
     position: relative;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 50px;;
 }
 
 #guild-info h2 {

@@ -1,23 +1,43 @@
 .phase-title {
-    font-family: 'Nova Square', sans-serif;
-    font-size: max(1.5vw, 15px);
-
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
     margin: 0;
 }
 
 .phase-completion {
     margin: 0;
     font-family: 'Nova Square', sans-serif;
-    font-size: max(3vw, 15px);
+    font-size: 35px;
     padding-left: 10px;
 }
 
 .accomplishment-header {
     width: 90%;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     align-self: flex-end;
     padding: 5px;
     padding-bottom: 0;
     color: #182335;
+    padding: 20px;
+}
+
+@media screen and (max-width: 1351px) {
+    .phase-title {
+        font-size: 28px;
+    }
+
+    .phase-completion {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .phase-title {
+        font-size: max(5vw, 20px);
+    }
+
+    .phase-completion {
+        font-size: max(5vw, 20px);
+    }
 }
