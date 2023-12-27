@@ -5,7 +5,7 @@
     background: #EAE4CC;
     padding: 13px;
     padding-left: 50px;
-    width: 50%;
+    width: 400px;
     position: relative;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #182335;
@@ -32,22 +32,40 @@
 
 .admin-card-title {
     display: flex;
-    justify-content: center;
     align-items: baseline;
 }
 
-.admin-card-title h3 {
+.card-title-role {
+    font-family: 'Lato', sans-serif;
+}   
+
+.card-title-admin {
     font-family: 'Nova Square', sans-serif;
     padding-left: 3px;
-    font-size: 2vw;
-}
-.admin-card-title h4 {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.3vw;
 }
 
 .admin-card-info p {
     font-family: 'Lato', sans-serif;
     padding-left: 10px;
-    font-size: .8vw;
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width: 520px) {
+    .admin-card {
+    width: 300px;
+    }
+
+    .admin-card-info {
+        margin-left: 20px;
+    }
+
+    .card-title-admin {
+        font-size: 17px;
+    }
+    
+    .card-title-role {
+        font-size: 20px;
+    }
 }

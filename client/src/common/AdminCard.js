@@ -30,8 +30,8 @@ export const AdminCard = (props) => {
             }}></div>
             <div className="admin-card-info">
                 <div className="admin-card-title">
-                    <h4>{`${props.role}: `}</h4>
-                    <h3>{props.admin}</h3>
+                    <h3 className="card-title-role">{`${props.role}: `}</h3>
+                    <h3 className="card-title-admin">{props.admin}</h3>
                 </div>
                 <p>{props.quote}</p>
             </div>

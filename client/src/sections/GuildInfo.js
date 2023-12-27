@@ -9,9 +9,12 @@ export const GuildInfo = () => {
     return (
         <>
             <h2 className="section-header">Guild Information</h2>
+            <div id="guild-info-sub-header">
+                <p>Gaze upon your royalty and ponder the requirements set before you</p>
+            </div>
             <section id="guild-info">
                 <div id="guild-admins">
-                    <h3 id="admin-header">Admins</h3>
+                    <h2 id="admin-header">Admins</h2>
                     {admins.map(({ admin, role, quote }, index) => {
                         return <AdminCard
                             key={index}
@@ -22,10 +25,10 @@ export const GuildInfo = () => {
                     })};
                 </div>
                 <div id="raid-info">
-                    <h3>Raid Schedule</h3>
+                    <h2>Raid Schedule</h2>
                     <p>Server Time (ST) is the same as Eastern Standard Time</p>
                     <RaidGroupCard />
-                    <div>
+                    <div id="raid-info-footer">
                         <p>Groups may also organize for Kara and Classic Raid Content (just for fun)</p>
                         <p>Utilize discord chats for non-weekly raids, guild rquests, and general nonsense</p>
                     </div>
