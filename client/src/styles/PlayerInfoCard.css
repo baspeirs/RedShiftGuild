@@ -16,13 +16,13 @@
     position: relative;
 }
 
-.player-info:hover {
+.player-card.player-info:hover {
     cursor: pointer;
     transition: .4s;
     background-color: #182335;
 }
 
-.player-info:hover::after {
+.player-card.player-info:hover::after {
     content: 'VIEW';
     text-decoration: underline;
     position: absolute;
@@ -39,13 +39,6 @@
 .player-info p {
     margin: auto;
     margin-left: 10px;
-}
-
-.no-info {
-    background-color: #263854;
-    border: solid #2e4873 1px;
-    font-style: italic;
-    font-size: small;
 }
 
 .dps {

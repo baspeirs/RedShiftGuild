@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Roster.css';
 import { useSelector } from 'react-redux';
 import { PlayerInfoCard } from '../common/PlayerInfoCard';
+import { OpenSlotCard } from '../common/OpenSlotCard'
 
 export const Roster = () => {
     const tanks = useSelector(state => state.roster.roster.tanks);
@@ -27,7 +28,9 @@ export const Roster = () => {
                                             playerInfo={tank}
                                             charRole={'tank'}
                                         />
-                                        : <p className='player-card no-info' key={index}>Open Slot</p>
+                                        : <OpenSlotCard
+                                            charRole={'tank'}
+                                        />
                                 })}
                             </div>
                         </div>
@@ -43,7 +46,9 @@ export const Roster = () => {
                                             playerInfo={healer}
                                             charRole={'healer'}
                                         />
-                                        : <p className='player-card no-info' key={index}>Open Slot</p>
+                                        : <OpenSlotCard
+                                            charRole={'healer'}
+                                        />
                                 })}
                             </div>
                         </div>
@@ -62,7 +67,9 @@ export const Roster = () => {
                                             playerInfo={damageDealer}
                                             charRole={'dps'}
                                         />
-                                        : <p className='player-card no-info' key={index}>Open Slot</p>
+                                        : <OpenSlotCard
+                                            charRole={'dps'}
+                                        />
                                 })}
                             </div>
                         </div>

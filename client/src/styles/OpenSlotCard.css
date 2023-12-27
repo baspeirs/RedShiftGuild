@@ -1,0 +1,14 @@
+.open-slot-card {
+    display: flex;
+    border: 2px dashed #B6B6B6;
+    width: 300px;
+    justify-content: start;
+    align-items: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+/* .open-slot-card p {
+    font-style: italic;
+    margin: auto;
+    margin-left: 5px;
+} */
