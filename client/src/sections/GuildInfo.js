@@ -3,6 +3,8 @@ import '../styles/GuildInfo.css';
 import { AdminCard } from "../common/AdminCard";
 import { RaidGroupCard } from "../common/RaidGroupCard";
 import { useSelector } from "react-redux";
+import AdminsBackground from '../images/OtherImages/AdminsBackground.png';
+import RaidScheduleBackground from '../images/OtherImages/RaidScheduleBackground.png';
 
 export const GuildInfo = () => {
     const admins = useSelector(state => state.admins.admins);
@@ -13,18 +15,28 @@ export const GuildInfo = () => {
                 <p>Gaze upon your royalty and ponder the requirements set before you</p>
             </div>
             <section id="guild-info">
-                <div id="guild-admins">
+                <div id="guild-admins" style={{
+                    backgroundImage: `url(${AdminsBackground})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}>
                     <h2 id="admin-header">Admins</h2>
-                    {admins.map(({ admin, role, quote }, index) => {
-                        return <AdminCard
-                            key={index}
-                            admin={admin}
-                            role={role}
-                            quote={quote}
-                        />
-                    })};
+                    <div id='admin-list'>
+                        {admins.map(({ admin, role, quote }, index) => {
+                            return <AdminCard
+                                key={index}
+                                admin={admin}
+                                role={role}
+                                quote={quote}
+                            />
+                        })}
+                    </div>
                 </div>
-                <div id="raid-info">
+                <div id="raid-info" style={{
+                    backgroundImage: `url(${RaidScheduleBackground})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}>
                     <h2>Raid Schedule</h2>
                     <p>Server Time (ST) is the same as Eastern Standard Time</p>
                     <RaidGroupCard />

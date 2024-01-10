@@ -23,11 +23,9 @@ export const AdminCard = (props) => {
     }
     return (
         <div className="admin-card">
-            <div className="admin-image" style={{
-                backgroundImage: `url(${adminImage(props.admin)})`,
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover'
-            }}></div>
+            <div>
+                <img className="admin-image" src={`${adminImage(props.admin)}`} alt={`admin ${props.admin}`} />
+            </div>
             <div className="admin-card-info">
                 <div className="admin-card-title">
                     <h3 className="card-title-role">{`${props.role}: `}</h3>
@@ -38,3 +36,4 @@ export const AdminCard = (props) => {
         </div>
     )
 };
+

@@ -1,46 +1,39 @@
 .admin-card {
     display: flex;
-    justify-content: start;
-    align-items: end;
+    /* padding-right: 22.408px; */
+    align-items: center;
+    gap: 17.926px;
+    width: 30vw;
+    border-radius: 7.843px;
+    border: 1px solid #FFF;
     background: #EAE4CC;
-    padding: 13px;
-    padding-left: 50px;
-    width: 400px;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 5px 5px 5px #182335;
-    margin: 15px;
+    box-shadow: 0px 4.482px 4.482px 0px rgba(0, 0, 0, 0.50);
 }
 
 .admin-card-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: start;
     color: #182335;
 }
 
 .admin-image {
-    position: absolute;
-    left: -15%;
-    top: 10%;
-    border-radius: 5%;
-    width: 10.5vh;
-    height: 10.5vh;
-    box-shadow: 5px 5px 5px black;
+    height: 100px;
+    border-radius: 7.843px 0 0 7.843px;
+    aspect-ratio: 1/1;
+    background:  lightgray -157.062px -165.819px / 2032.911% 902.941% cover no-repeat;
 }
 
 .admin-card-title {
     display: flex;
-    align-items: baseline;
 }
 
 .card-title-role {
-    font-family: 'Lato', sans-serif;
-}   
+    font-family: 'Nova Square', sans-serif;
+}
 
 .card-title-admin {
-    font-family: 'Nova Square', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-left: 3px;
 }
 
@@ -52,19 +45,27 @@
 
 
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 1250px) {
     .admin-card {
-    width: 300px;
+        width: 300px;
+        gap: 0;
+        width: 100%;
     }
 
     .admin-card-info {
         margin-left: 20px;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+
+    .admin-card-title {
+        align-items: baseline;
     }
 
     .card-title-admin {
-        font-size: 17px;
+        font-size: 20px;
     }
-    
+
     .card-title-role {
         font-size: 20px;
     }

@@ -70,3 +70,9 @@ h2 {
       0 0 80px rgb(227, 24, 24);
   }
 }
+
+@media screen and (max-width: 1250px) {
+    h1 {
+        font-size: 75px;
+    }
+}

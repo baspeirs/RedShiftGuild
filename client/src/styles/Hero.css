@@ -60,3 +60,10 @@
 .custom-shape-divider-bottom-1702921464 .shape-fill {
     fill: #182335;
 }
+
+@media screen and (max-width: 1250px) {
+    #hero-content {
+        justify-content: center;
+        align-items: center;
+    }
+}
