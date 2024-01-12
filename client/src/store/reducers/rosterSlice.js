@@ -1,21 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialRosterState = {
-    roster: {},
-    schedule: {},
-    bench: {}
+    rosters: []
 };
 
 const rosterReducers = {
     getRoster(state, action) {
-        const payload = action.payload.data.group1
-        state.roster = payload.roster
-        state.schedule = {
-            days: payload.schedule.days,
-            raidStart: payload.schedule.times[0],
-            raidEnd: payload.schedule.times[1],
-            inviteTime: payload.schedule.times[2]
-        }
+        const payload = action.payload.data.groups
+        state.rosters = payload.map(group => {
+            return {
+                group: group.group,
+                roster: group.roster,
+                schedule: group.schedule
+            }
+        })
     }
 };
 

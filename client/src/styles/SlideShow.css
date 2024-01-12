@@ -1,8 +1,7 @@
 .slide-show {
     margin: 0;
     overflow: hidden;
-    width: 90%;
-    padding-bottom: 10px;
+    width: 100%;
 }
 
 .slide-show-slider {
@@ -14,5 +13,4 @@
 .slide {
     display: inline-block;
     width: 100%;
-    border-radius: 40px;
 }

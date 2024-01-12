@@ -1,12 +1,8 @@
 .raid-card {
-    border-radius: 1rem;
     color: #ffff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: auto;
     aspect-ratio: 16/13;
-    margin: 3px;
 }
 
 .empty {
@@ -15,8 +11,6 @@
 
 .raid-details {
     font-family: 'Nova Square', sans-serif;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,11 +28,16 @@
 
 .raid-details h4 {
     margin-top: 55px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 @media screen and (max-width: 1250px) {
     .raid-card {
         aspect-ratio: 16/10;
+    }
+
+    .raid-details h4{
+        font-size: 5vw;
+        margin-top: 25px;
     }
 }

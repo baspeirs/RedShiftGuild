@@ -46,7 +46,7 @@ export const RaidCard = (props) => {
         }}>
             <div className="empty"></div>
             <div className="raid-details">
-                <h4>{props.raid}</h4>
+                <h4 style={{wordBreak: 'break-word'}}>{props.raid}</h4>
                 <p>{props.completion}</p>
             </div>
         </div>

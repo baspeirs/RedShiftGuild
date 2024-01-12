@@ -37,10 +37,18 @@ router.get('/api/getRoster', async (req, res) => {
 
     // add all returned data into one object
     returnData = {
-        group1: {
-          roster: rosterMapper(getGroup1.data.values),
-          schedule: scheduleMapper(getRaidDetails1.data.values[0])
-        },
+        groups: [
+          {
+            group: 'Group 1',
+            roster: rosterMapper(getGroup1.data.values),
+            schedule: scheduleMapper(getRaidDetails1.data.values[0])
+          },
+          {
+            group: 'Group 2',
+            roster: 'recruiting',
+            schedule: 'recruiting'
+          }
+        ],
         bench: getBench.data
     };
 

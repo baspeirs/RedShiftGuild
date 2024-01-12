@@ -52,17 +52,19 @@
 
 .phase-card {
   width: 32%;
-  border-radius: .25rem;
+  border-radius: 25px;
   background-color: #eae4cc;
   display: flex;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 @media (max-width: 1250px) {
   .phases {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
 
   .phase-card {
